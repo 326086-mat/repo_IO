@@ -40,8 +40,32 @@ int main()
 		cout << endl;
 		cout << endl;
 		cout << "MENU" << endl;
+		cout << "2. Liczba pierwsza" << endl;
 		cout << "0. Wyjscie" << endl;
 		cin >> wyjscie;
+		switch(wyjscie)
+		{
+			case 2:
+				if(isNumberPrime(a))
+				{
+					cout << a << ": TAK" << endl;
+				}
+				else
+				{
+					cout << a << ": NIE" << endl;
+
+				}
+
+				if(isNumberPrime(b))
+				{
+					cout << b << ": TAK" << endl;
+				}
+				else
+				{
+					cout << b << ": NIE" << endl;
+
+				}
+		}
 	}
 	while(wyjscie != 0);
 
