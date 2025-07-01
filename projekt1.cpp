@@ -28,8 +28,17 @@ int main()
 		cout << endl;
 		cout << endl;
 		cout << "MENU" << endl;
+		cout << "1. Silnia" << endl;
 		cout << "0. Wyjscie" << endl;
 		cin >> wyjscie;
+		switch(wyjscie)
+		{
+
+			case 1:
+				cout << "Silnia liczby " << a << " = " << factorial(a) << endl;
+				cout << "Silnia liczby " << b << " = " << factorial(b) << endl;
+				break;
+		}
 	}
 	while(wyjscie != 0);
 
