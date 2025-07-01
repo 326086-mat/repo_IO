@@ -1,6 +1,22 @@
 #include <iostream>
 using namespace std;
 
+unsigned int factorial(int a)
+{
+	if(a < 0)
+	{
+		return -1;
+	}
+
+	int result = 1;
+	for(int i = 1; i <= a; i++)
+	{
+		result *= i;
+	}
+
+return result;
+}
+
 int main() 
 {
 	int a, b;
